@@ -1,0 +1,29 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" fill="#F5F5F5"/>
+<g id="iPhone 14 Pro - 62" clip-path="url(#clip0_0_1)">
+<rect width="393" height="852" transform="translate(-347 -233)" fill="white"/>
+<g id="inbox">
+<g id="Group 31577">
+<g id="Rectangle 22474">
+<mask id="path-1-inside-1_0_1" fill="white">
+<path d="M-330 -13H31V63H-330V-13Z"/>
+</mask>
+<path d="M-330 -12.5H31V-13.5H-330V-12.5Z" fill="#C6C6C8" mask="url(#path-1-inside-1_0_1)"/>
+</g>
+</g>
+<g id="9043592_information_icon 1" clip-path="url(#clip1_0_1)">
+<path id="Vector" d="M12.75 16.5V9.75H9.75V11.25H11.25V16.5H9V18H15V16.5H12.75Z" fill="#0086FF"/>
+<path id="Vector_2" d="M12.0008 5.25C11.4008 5.25 10.8008 5.7 10.8008 6.45C10.8008 7.2 11.4008 7.5 12.0008 7.5C12.6008 7.5 13.2008 7.05 13.2008 6.3C13.2008 5.55 12.6008 5.25 12.0008 5.25Z" fill="#0086FF"/>
+<path id="Vector_3" d="M12 22.5C6.15 22.5 1.5 17.85 1.5 12C1.5 6.15 6.15 1.5 12 1.5C17.85 1.5 22.5 6.15 22.5 12C22.5 17.85 17.85 22.5 12 22.5ZM12 3C7.05 3 3 7.05 3 12C3 16.95 7.05 21 12 21C16.95 21 21 16.95 21 12C21 7.05 16.95 3 12 3Z" fill="#0086FF"/>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="393" height="852" fill="white" transform="translate(-347 -233)"/>
+</clipPath>
+<clipPath id="clip1_0_1">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
