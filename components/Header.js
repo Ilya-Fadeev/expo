@@ -11,7 +11,7 @@ function CustomHeader(props) {
           style={styles.icon}
           name={props.iconName}
           size={24}
-          color={"#000"}
+          color={props.color}
         />
       </View>
       <View style={styles.divider}></View>
@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
   headerContainer: {
     backgroundColor: "#fff",
 
-    paddingVertical: 8, // Вертикальный отступ
+    paddingVertical: 8,
     height: 130,
     justifyContent: "flex-end",
     width: "100%",
@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     color: "#000",
     fontWeight: "regular",
     fontSize: 28,
-    paddingHorizontal: 25, // Горизонтальный отступ
+    paddingHorizontal: 25,
   },
   divider: {
     borderBottomWidth: 0.6,

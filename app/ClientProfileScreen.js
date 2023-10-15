@@ -4,7 +4,7 @@ import { useRoute, useNavigation } from "@react-navigation/native";
 import LeftArrow from "../assets/icons/left_arrow.svg";
 import RightArrow from "../assets/icons/right_arrow.svg";
 
-export default function ModalScreen() {
+const ClientProfileScreen = () => {
   const route = useRoute();
   const { itemID, avatar, name } = route.params;
   const navigation = useNavigation();
@@ -145,19 +145,20 @@ export default function ModalScreen() {
       </View>
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     width: "100%",
     backgroundColor: "#ffffff",
+    paddingVertical: "10%",
   },
   header: {
     flexDirection: "column",
     alignItems: "center",
     gap: 15,
-    padding: 20,
+    padding: 50,
     borderBottomWidth: 0.6,
     borderBottomColor: "#C6C6C8",
     marginBottom: 4,
@@ -208,7 +209,7 @@ const styles = StyleSheet.create({
   backButton: {
     position: "absolute",
     left: 25,
-    top: 35,
+    top: 65,
   },
   table1: {},
   column1: {
@@ -228,3 +229,5 @@ const styles = StyleSheet.create({
     gap: 5,
   },
 });
+
+export default ClientProfileScreen;

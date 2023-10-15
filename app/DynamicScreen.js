@@ -26,6 +26,8 @@ const DynamicScreen = () => {
             ]}
           >
             <Text
+              selectable={true}
+              userSelect="auto"
               style={message.isMine ? styles.sentText : styles.receivedText}
             >
               {message.text}

@@ -16,7 +16,10 @@ const HomeScreen = ({ navigation }) => {
         <TouchableOpacity
           key={item.id}
           onPress={() =>
-            navigation.navigate("Dynamic", { itemId: item.id, name: item.text })
+            navigation.navigate("Messages", {
+              itemId: item.id,
+              name: item.text,
+            })
           }
         >
           <View style={styles.conv} title={item.text}>

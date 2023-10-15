@@ -16,7 +16,11 @@ const ProfileScreen = ({ navigation }) => {
         <TouchableOpacity
           key={item.id}
           onPress={() =>
-            navigation.navigate("Dynamic", { itemId: item.id, name: item.text })
+            navigation.navigate("ClientProfile", {
+              itemId: item.id,
+              name: item.text,
+              avatar: item.avatar,
+            })
           }
         >
           <View style={styles.conv} title={item.text}>

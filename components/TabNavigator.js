@@ -16,21 +16,23 @@ function TabNavigator() {
         tabBarStyle: { paddingVertical: 10, paddingHorizontal: 20 },
         tabStyle: {
           padding: 10,
-          alignItems: "center", // Выровнять иконку по центру вертикально
+          alignItems: "center",
           flex: 1,
         },
-        activeTintColor: "#D82A11", // Цвет активной иконки
-        inactiveTintColor: "#fff", // Цвет неактивной иконки
+        activeTintColor: "#D82A11",
+        inactiveTintColor: "#fff",
         labelStyle: {
-          display: "none", // Скрыть текст меток табов
+          display: "none",
         },
       }}
     >
       <Tab.Screen
-        name="Inbox"
+        name="InboxTab"
         component={HomeScreen}
         options={({ route }) => ({
-          header: () => <CustomHeader name={"Inbox"} iconName={"filter"} />,
+          header: () => (
+            <CustomHeader name={"Inbox"} iconName={"filter"} color="black" />
+          ),
           tabBarLabel: "",
           tabBarIcon: ({ color, size = 25 }) => (
             <Message width={size} height={size} fill={color} />
@@ -43,7 +45,7 @@ function TabNavigator() {
         })}
       />
       <Tab.Screen
-        name="Profile"
+        name="ProfileTab"
         component={ProfileScreen}
         options={({ route }) => ({
           header: () => <CustomHeader name={"Profile"} iconName={"plus"} />,

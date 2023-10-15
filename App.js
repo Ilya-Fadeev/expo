@@ -5,6 +5,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import DynamicScreen from "./app/DynamicScreen";
 import ModalScreen from "./app/ModalScreen";
+import ClientProfileScreen from "./app/ClientProfileScreen";
 import TabNavigator from "./components/TabNavigator";
 
 const Stack = createStackNavigator();
@@ -28,16 +29,25 @@ export default function App() {
         }}
       >
         <Stack.Screen
-          name="Main"
+          name="Inbox"
           options={{ headerShown: false }}
           component={TabNavigator}
         />
 
-        <Stack.Screen name="Dynamic" component={DynamicScreen} />
+        <Stack.Screen name="Messages" component={DynamicScreen} />
+        <Stack.Screen
+          name="ClientProfile"
+          component={ClientProfileScreen}
+          options={{ headerShown: false }}
+        />
         <Stack.Screen
           name="Modal"
           component={ModalScreen}
-          options={{ presentation: "modal" }}
+          options={{
+            presentation: "modal",
+            tabBarLabel: "",
+            headerShown: false,
+          }}
         />
       </Stack.Navigator>
     </NavigationContainer>
